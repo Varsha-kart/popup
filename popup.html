@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h1>Alert Message</h1>
+<body>
+<button onclick="myFunction()">click here</button>
+
+<script>
+function myFunction() {
+  alert("This Page can't be loaded");
+}
+</script>
+
+
+<h1>Confirm Box</h1>
+
+
+<button onclick="myFunc()">Click here</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunc()
+ {
+  var txt;
+  if (confirm("Press a button!")) {
+    txt = "You pressed OK!";
+  } else {
+    txt = "You pressed Cancel!";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+
+<h1>Prompt</h1>
+
+<button onclick="myFunc1()">Click here</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunc1() {
+  let text;
+  let person = prompt("Please enter your name:", "Name");
+  if (person == null || person == "") {
+    text = "User cancelled the prompt.";
+  } else {
+    text = "Hello " + person + "! Please Wait for a Moment..An Error Occured!!";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
